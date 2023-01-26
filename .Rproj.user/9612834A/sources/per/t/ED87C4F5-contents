@@ -1,0 +1,173 @@
+---
+title: "Analysis on third year students research titles"
+format: html
+editor: visual
+---
+
+
+## Steps in Create Word Clouds of research titles
+
+### STEP1: Retrieving the data and uploading the packages
+
+To generate word clouds, you need to download the wordcloud package in R as well as the RcolorBrewer package for the colours. Note that there is also a wordcloud2 package, with a slightly different design and fun applications. I will show you how to use both packages.
+
+```{r}
+require(tidyverse)
+require(readxl)
+require(tm)           # for text mining
+require(SnowballC)    # for text stemming
+require(wordcloud)    # word-cloud generator
+require(RColorBrewer) # color palettes
+require(wordcloud2)
+require(ggalluvial)
+```
+
+
+First  data will be loaded into R using the *read_excel()* function of **readxl** package
+
+```{r}
+student = read_excel("student_2020-23.xlsx")
+```
+
+The vector containing only text to be used in analysis will be created from the imported excel file.
+
+```{r}
+student.text = student$Title 
+```
+
+Thereafter, a corpus will be generated from the vector using the *Corpus()* function of **tm** package
+
+```{r}
+student.doc = tm::Corpus(VectorSource(student.text))
+```
+
+### STEP 2: Clean the text data
+
+Cleaning is an essential step to take before you generate your wordcloud. Indeed, for your analysis to bring useful insights, you may want to remove special characters, numbers or punctuation from your text. In addition, you should remove common stop words in order to produce meaningful results and avoid the most common frequent words such as “I” or “the” to appear in the word cloud.
+
+If you’re working with a corpus, there are several packages you can use to clean your text. The following lines of code show you how to do this using the tm package.
+
+```{r}
+#| warning: false
+#| message: false
+student.doc.clean = student.doc %>% 
+  tm_map(removeNumbers) %>% 
+  tm_map(removePunctuation) %>% 
+  tm_map(stripWhitespace) %>% 
+  tm_map(content_transformer(tolower)) %>% 
+  tm_map(removeWords, stopwords(kind = "en"))
+
+ 
+```
+
+### STEP 3: Create a document-term-matrix
+
+What you want to do as a next step is to have a dataframe containing each word in your first column and their frequency in the second column.
+
+This can be done by creating a document term matrix with the TermDocumentMatrix function from the tm package.
+
+```{r}
+student.matrix = TermDocumentMatrix(student.doc.clean) %>% 
+  as.matrix()
+
+student.word = sort(rowSums(student.matrix), decreasing = TRUE)
+     
+ student.word.df = data.frame(word = names(student.word), freq = student.word)
+  
+```
+
+### STEP 4: Generate the word cloud
+The wordcloud package is the most classic way to generate a word cloud. The following line of code shows you how to properly set the arguments. As an example, I chose to work with the student titles on their third year research project at SoAF.
+
+```{r}
+#| warning: false
+#| message: false
+set.seed(1234) # for reproducibility
+
+wordcloud(words = student.word.df$word, 
+          freq = student.word.df$freq, 
+          min.freq = 1,
+          random.order = FALSE, 
+         max.words = 200,
+         # rot.per = 0.35,
+          colors = brewer.pal(8, "Dark2"),
+         scale = c(3.5,0.4))
+```
+
+It may happen that your word cloud crops certain words or simply doesn’t show them. If this happens, make sure to add the argument scale=c(3.5,0.25) and play around with the numbers to make the word cloud fit.
+
+Another common mistake with word clouds is to show too many words that have little frequency. If this is the case, make sure to adjust the minimum frequency argument (min.freq=…) in order to render your word cloud more meaningful.
+
+
+
+```{r}
+#| warning: false
+#| message: false
+set.seed(1234) # for reproducibility
+
+wordcloud(words = student.word.df$word, 
+          freq = student.word.df$freq, 
+          min.freq = 3,
+          random.order = FALSE, 
+         # max.words = 1000,
+         # rot.per = 0.35,
+          colors = brewer.pal(8, "Dark2"), 
+         scale = c(3.5,0.6))
+```
+
+
+The **wordcloud2** package is a bit more fun to use, allowing us to do some more advanced visualisations. For instance, you can choose your wordcloud to appear in a specific shape or even letter (see this vignette for a useful tutorial). As an example, I used the same corpus of student title and generated the two word clouds shown below. Cool, right?
+
+```{r}
+wordcloud2(data = student.word.df, 
+           size = 0.8, 
+           color = "random-dark",
+           minSize = 3,
+           ellipticity = 2,
+           gridSize = 11)
+```
+
+```{r}
+student %>% 
+  mutate(field = replace(field, field == "GIS" | field == "policy", "fishery"),
+         field = replace(field, field == "plankton", "ecosystem"),
+         field = replace(field, field == "physical", "pollution")) %>% 
+  mutate(year = as.factor(year)) %>% 
+  group_by(gender, field, year) %>% 
+  count() %>% 
+  ggplot(aes(axis1 = year, axis3 = gender, axis2 = field, y = n)) +
+  geom_alluvium(aes(fill = field), curve_type = "sigmoid", alpha = 0.6, width = 1/3)+
+  geom_stratum(aes(fill = field), width = 1/3)+
+  geom_label(stat = "stratum", aes(label = after_stat(stratum)), size = 3, alpha = 0.6)+
+  theme_void()+
+  theme(legend.position = "none")+
+  ggsci::scale_fill_futurama()+
+  scale_fill_brewer(palette = "Dark2")
+  # scale_x_discrete(expand = c(0.1,0.05))
+  
+  # ggsave("aa.pdf")
+```
+
+
+```{r}
+student %>% 
+  mutate(field = replace(field, field == "GIS" | field == "policy", "fishery"),
+         field = replace(field, field == "plankton", "ecosystem"),
+         field = replace(field, field == "physical", "pollution")) %>% 
+  filter(year %in% c(2021,2023)) %>% 
+  mutate(year = as.factor(year)) %>% 
+  group_by(gender, field, year) %>% 
+  count() %>% 
+  ggplot(aes(axis1 = year, axis3 = gender, axis2 = field, y = n)) +
+  geom_alluvium(aes(fill = field), curve_type = "xspline", alpha = 0.6, width = 1/3)+
+  geom_stratum(aes(fill = field), width = 1/3)+
+  geom_label(stat = "stratum", aes(label = after_stat(stratum)), size = 3, alpha = 0.6)+
+  theme_void()+
+  theme(legend.position = "none")+
+  ggsci::scale_fill_futurama()+
+  scale_fill_brewer(palette = "Dark2")
+  # scale_x_discrete(expand = c(0.1,0.05))
+  
+  # ggsave("aa.pdf")
+```
+

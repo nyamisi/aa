@@ -1,0 +1,127 @@
+---
+title: "AQ 399--Research Project"
+author: "Nyamisi Peter"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+format: revealjs
+---
+
+## Significance of the study
+
+- Significance of the study refers to the importance of your research.
+
+- While stating the significance, you must highlight the contribution or benefits of your research in science and in society. 
+
+- Start with broader importance, and narrowing it down to demonstrate the specific group that will benefit from your research.
+
+## Literature Review (Min. 3 pages)
+
+- A literature review is a comprehensive summary of previous research on a topic. 
+
+- The literature review surveys scholarly articles, books, and other sources relevant to a particular area of research. 
+
+- The review should enumerate, describe, summarize, objectively evaluate and clarify this previous research. 
+
+## Literature Review... (Min. 3 pages)
+
+- It should give a theoretical base for the research and help you (the author) determine the nature of your research.  
+
+- The literature review acknowledges (citing) the work of previous researchers. 
+
+- It is assumed that by mentioning a previous work in the field of study, that the author has read, evaluated, and assimilated that work into the work at hand.
+
+## Materials and Methods
+
+- A research proposal should contain this section which gives details on the materials and methods proposed to be used when conducting the research. 
+
+- The materials are tools, raw materials, subject and/or important chemicals used in your experiments.
+
+- Basically these are important details of **WHAT** you use in your research. 
+
+- The methods is **HOW** you conduct the research. 
+
+## Materials and Methods...
+
+- It describe all the steps or procedures you have done in order to achieve the research objectives, including the experimental design and data analysis.
+
+- This section must include the following;
+
+## Study site or area
+
+- This describe the location(s) where the proposed research will be carried out.
+
+- The details of the conditions and geographical characteristics and the map of the an area should also be included in this section. 
+
+##	Experimental design or sampling design
+
+- This is the step by step descriptions of where and how the experiment or the study will be conducted. 
+
+- This is the setup of your research experiment.
+
+- Explain how you will design your study or experiment, how often (frequency) will data be collected and for how long you will be collecting data. 
+
+##	Experimental design or sampling design...
+
+- This section should be described precisely and in details; it must be reproducible. 
+
+- If questionnaires will be used, samples of the proposed questionnaires should be presented.
+
+## Data collection
+
+- Explain the type of data which you will collect. 
+
+- Show the technique that will be used to collect data. 
+
+- If you are using a method that has been validated; state the method and cite the author.
+
+- In case new methods or technique have been developed; describe it in details. 
+
+##	Data analysis
+
+- Data analysis is a process of cleaning, transforming, presenting, visualizing and modeling data to discover useful information for decision-making.
+
+- It involves statistical analyses in order to draw conclusion based on your research objectives and hypotheses. 
+
+- There are two types of statistical analysis -- **Descriptive statistics** and **Inferential statistics**
+
+- Descriptive statistics describes nature of the data or gives a summary of the data.
+
+##	Data analysis...
+
+- It shows distribution and variation of the data.
+
+- However, you can not make conclusion based on this type of statistics.
+
+- Inferential statistics is the type of statistics used to draw conclusion. 
+
+- There are different types of inferential statistics; some are **parametric** such as t-test, ANOVA while some are **non-parametric** such as Man-whitney test and Kruskal-wallis.
+
+##	Data analysis...
+
+- This section is very important when preparing your research proposal.
+
+- State the type of statistical test which you will use to test each hypothesis. 
+
+- The type of statistical software which you are going to use during analysis also have to be shown in this section.
+
+# Other relevant information
+
+## Work plan or Timeframe
+
+- A work plan is a schedule, chart or graph that summarizes different activities of a research project.
+
+- Every activity of your research have to be included in this section from formulation of the research title to the final submission of the report.
+
+## Budgeting and Financial arrangements
+
+- Financial budget will include all the cost that will be needed to conduct and complete the study. 
+
+- Total amount of cost should be broken up into specific amount.
+
+## References
+
+- The reference section must contain an alphabetical list of all references cited in the text. 
+
+- **Use Tanzania Journal of Science** referencing style to cite and list the references. 
+
+- All references cited in the document **MUST** appear in the reference list, and all in the reference list MUST be cited in the document.
+

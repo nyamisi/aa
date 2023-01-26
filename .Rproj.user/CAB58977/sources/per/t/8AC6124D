@@ -1,0 +1,31 @@
+{
+    "id": "8AC6124D",
+    "path": "~/SOAF/Research_project3rdYr/proposal_presentation_schedule.qmd",
+    "project_path": "proposal_presentation_schedule.qmd",
+    "type": "quarto_markdown",
+    "hash": "3082514083",
+    "contents": "",
+    "dirty": false,
+    "created": 1671438581963.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "cursorPosition": "20,22",
+        "scrollLine": "11",
+        "rmdVisualModeLocation": "2:0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1671438810,
+    "encoding": "ISO8859-1",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1671438810150,
+    "read_only": false,
+    "read_only_alternatives": []
+}

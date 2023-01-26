@@ -1,0 +1,512 @@
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ 5858)) %>%
+```
+student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6"))
+student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ "ijumaa")) %>%
+```
+student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ "ijumaa"))
+student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ dmy(12122022)))
+student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ dmy(16122022)))
+student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ dmy(16122022),
+day == "day2" ~ dmy(21122022),
+day == "day3" ~ dmy(28122022),
+day == "day4" ~ dmy(04012023),
+day == "day5" ~ dmy(11012023),
+day == "day6" ~ dmy(18012023)))
+student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ dmy(16122022),
+day == "day2" ~ dmy(21122022),
+day == "day3" ~ dmy(28122022),
+day == "day4" ~ dmy(04012023),
+day == "day5" ~ dmy(11012023),
+day == "day6" ~ dmy(18012023)),
+day = if_else(day == "day1", "Friday", "Wednesday"))
+student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ dmy(16122022),
+day == "day2" ~ dmy(21122022),
+day == "day3" ~ dmy(28122022),
+day == "day4" ~ dmy(04012023),
+day == "day5" ~ dmy(11012023),
+day == "day6" ~ dmy(18012023)),
+day = if_else(day == "day1", "Friday", "Wednesday"))
+student_new_timetable = student_new %>%
+mutate(day = case_when(student == "Muller Fransisca Ludovick" |
+student == "Abuubakary Mwishee A"|
+student == "Denis Washington"|
+student == "Iddi Iddi Juma"|
+student == "Ramadhan Catherine"|
+student == "Kyando Amenipa Lawi"~ "day1",
+student == "Chalula Faraja"|
+student == "Walter Norah Onduru" |
+student == "Daudi Hashiru S" |
+student == "Bakari Mahadi Hussein" |
+student == "Bilananiye Obedi James" |
+student == "Thomasi Kelvin Michael" |
+student == "Gunda Witness J" |
+student == "Atata Joshua Edwin" ~ "day2",
+student == "Gushaha Amina Gumada" |
+student == "Mwango Charles F" |
+student == "Petro Evance Cornel" |
+student == "Bitoye Mancef C" |
+student == "Dyamwale Esther Gabriel" |
+student == "Mmari Elisifa Martin" |
+student == "Msangi Ramadhan Yunusi" |
+student == "Stephen Lewis Mutalemwa" ~ "day3",
+student == "Leticia Lumanci Kuhaba" |
+student == "Thomas Julius Dioniz" |
+student == "Rashidi Zahara Suedi"|
+student == "Lyobah Asia J" |
+student == "Damas Nelson M" |
+student == "Hassani Amir J" |
+student == "Elmy Farhiya" |
+student == "Hassan Hassan J" ~ "day4",
+student == "Mahinda Neema" |
+student == "Mhina Agness J" |
+student == "Shekulavu Abushe H" |
+student == "Madale B Vitus" |
+student == "Khator Hameid M" |
+student == "Msola Husna A" |
+student == "Omar Jumanne" |
+student == "Mangula Philipo P" ~ "day5",
+student == "Ramadhan Pharles J" |
+student == "Rashid Rahma Amir" |
+student == "Nsanzugwanko Thomas N" |
+student == "James Joyna" |
+student == "Moyo Benjamin" |
+student == "Marwa Stephen J" ~ "day6")) %>%
+mutate(day = replace(day, is.na(day), "day2"),
+date = case_when(day == "day1" ~ dmy(16122022),
+day == "day2" ~ dmy(21122022),
+day == "day3" ~ dmy(28122022),
+day == "day4" ~ dmy(04012023),
+day == "day5" ~ dmy(11012023),
+day == "day6" ~ dmy(18012023)),
+day = if_else(day == "day1", "Friday", "Wednesday"))
+student_new_timetable %>%
+write_csv("student_proposal_timetable.csv")
+student_new_timetable %>%
+filter(day == "Friday")
+student_new_timetable %>%
+filter(day == "Friday") %>%
+write_csv("day1_proposal_timetable.csv")
+student_new_timetable %>%
+filter(date == dmy(21122022)) %>%
+write_csv("day1_proposal_timetable.csv")
+student_new_timetable %>%
+filter(date == "Friday") %>%
+write_csv("day1_proposal_timetable.csv")
+filter(day == "Friday") %>%
+write_csv("day1_proposal_timetable.csv")
+student_new_timetable %>%
+filter(day == "Friday") %>%
+write_csv("day1_proposal_timetable.csv")
+student_new_timetable %>%
+filter(date == dmy(21122022)) %>%
+write_csv("day2_proposal_timetable.csv")
+student_new_timetable %>%
+filter(date == dmy(28122022)) %>%
+write_csv("day3_proposal_timetable.csv")
+student_new_timetable %>%
+filter(date == dmy(04012023)) %>%
+write_csv("day4_proposal_timetable.csv")
+student_new_timetable %>%
+filter(date == dmy(11012023)) %>%
+write_csv("day5_proposal_timetable.csv")
+student_new_timetable %>%
+filter(date == dmy(18012023)) %>%
+write_csv("day6_proposal_timetable.csv")
+install.packages(c("bookdown", "broom", "datawizard", "digest", "evaluate", "FactoMineR", "future", "gmp", "htmltools", "htmlwidgets", "httpuv", "jsonlite", "mapsf", "maptools", "openssl", "parallelly", "pkgdown", "progressr", "rerddap", "rerddapXtracto", "rgdal", "rgeos", "rmarkdown", "roxygen2", "rvg", "shiny", "testthat", "timeDate", "tinytex", "units", "wk"))

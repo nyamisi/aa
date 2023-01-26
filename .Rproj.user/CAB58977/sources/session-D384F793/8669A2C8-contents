@@ -1,0 +1,144 @@
+---
+title: "Inception Report to Support Fisheries Data Collection and Monitoring in the Western Indian Ocean Region"
+format: pdf
+documentclass: report
+toc: true
+number-sections: false
+geometry: "top = 2cm, bottom = 2cm, left = 2cm, right = 2cm"
+bibliography: fao.bib
+csl: havard.csl
+
+---
+
+#  Background {.numbered}
+
+To raise awareness of countries in the Western Indian Ocean (WIO) in monitoring their progress toward the achievement of the Sustainable Development Goals (SDGs), the FAO has partnered with WIOMSA to support capacity-building activities in collection, monitoring, and assessment of fisheries data for the WIO region.  In general, these activities aim to strengthen the workflow from fisheries data collection to support the monitoring and reporting of SDG 14.4.1.
+
+In the WIO, small-scale fisheries dominate and are crucial for the livelihoods of coastal communities in the region, contributing to the twin imperatives of poverty reduction and economic development. However, these fisheries are dispersed, open-access in nature, multispecies and multi-gear, making their monitoring and determination of stock status for individual species incredibly challenging as data are insufficient for conventional stock assessment routines. 
+
+Efforts to determine stock status and provide evidence-based fisheries management advice are beset with problems, including insufficient or inadequate scientific data and expertise, which are compromised by economic and socio-political realities. For example, the regional state of the coast report for the western Indian Ocean (WIO) states that almost all countries in the region cannot adequately assess their marine resources and lack the financial capacity and technical expertise for effective management. Important impediments to fisheries management in the region relate to the following aspects:
+
+  i.	The lack of quality data available for analysis,
+  ii.	Inadequate capacity for in-depth analysis of data, especially in monitoring and assessment of the state of fisheries and the likely effects of alternative management interventions, and 
+  iii.	Poor coordination between institutions and insufficient sharing of information on which to build good governance.
+
+These have been highlighted as some of the impediments to meeting the targets of SDG 14. 
+
+Although the national fisheries institutes in the region do collect data on their fisheries, these
+data are often not detailed to an adequate granularity (e.g. regarding time, space, fleet or species levels), are not properly organized or linked, lack sufficient quality assurance and control, or are very difficult to retrieve for analysis. Additionally, there is often very limited technical capacity for managing, accessing and extracting data in a way that can be used for analysis. 
+
+Thus, even though data may exist, they often remain underutilized, strongly limiting the possibility of applying even data-limited approaches to stock monitoring. As such, analyses of stock status may be missing or be based on inappropriate metrics and methods, thereby hindering the formulation of relevant policies for the sector.
+
+In its role as custodian agency of the SDG 14 indicators, FAO has a mandate to support countries to strengthen their capacities to collect, process, analyse and report data while ensuring that different national data sets are comparable and can be aggregated at sub-regional,
+regional and global levels to monitor the SDGs.
+
+## Recent activities in the WIO
+
+Two workshops have been undertaken in the WIO/East African region, first a project kick-off meeting of the Fishing Data East Africa (FIDEA) project (Dar es Salaam, Tanzania, 16-17 September 2019), focused on Tanzania-Mainland, Tanzania-Zanzibar and Mozambique, at which FAO agreed to partner with FIDEA to support a capacity development workshop in the East Africa region. This led to a mission by FAO staff to investigate the data infrastructure in Tanzania-Mainland, Tanzania-Zanzibar and Mozambique, as well as the SDG 14.4.1 reporting capacity development workshop in Zanzibar from 2-14 March 2020, which included 10 East African countries and WIO island nations. 
+
+The report of this second workshop recommended some key actions to support countries in improving the collection and use of data for monitoring the SDG 14.4 target. A common point in these recommendations is a greater need to provide long-term support for developing appropriate data management systems. This goes beyond collection to focus particularly on validation, organization, protection, retrieval and summary of the data, essential steps for allowing reliable estimation and reporting of the SDG14.4.1 indicator. 
+
+It has been stated many times that ***The collection of data is not an end in itself, but is essential for informed decision-making***, and data can only be useful for supporting decision-making if they are properly stored, managed, and curated so that they have the quality necessary for providing meaningful and reliable advice. The report also recommended stronger collaboration between the SWIOFC regional process in monitoring the status of stocks and national processes in developing capacities for the monitoring of SDG14.4.1.
+
+## Objectives
+
+The objective of this consultancy is to support development and refining of training tools related to fisheries data management workflow. This will involve working closely with the fisheries expert towards the development of training tools for enhancing stock monitoring status and national processes for SDG14.4.1 monitoring.
+
+## Scope of the work
+
+In executing this consultancy, the Consultant will work closely with WIOMSA and FAO and the following tasks will be undertaken for guided data management, analysis and reporting for decision making and management of the fisheries resources in the region using Excel spreadsheet and R language tools. This will include development of the Excel and R tools that help to reproduce lecture material and tutorials.
+
+## Software used
+
+The software used will be R programming software [@R22] and excel spreadsheet. R is an open source language that allows people to work without a need of licence. The language has multiple benefits compared to other statistical software which include;
+
+  + Is the data wrangling and manipulation 
+  + Extensive support for statistical modeling 
+  + It supports number of packages 
+  + It has a powerful visualization tool
+  + It has several packages for spatial data, GIS and remote sensing dataset
+  + Analysis performed in R programme are reproducible
+ 
+\newpage
+# Methods and Process
+
+Various data types will be imported to R or excel software. Data in excel format may be exported to R and data in R can be exported to excel format (@fig-flowchart). The imported data will be processed, analyzed and information will be shared through dashboard, Book, Manual and reports. The whole process of analyzing fisheries data is shown in @fig-flowchart. The following subtopics which will be covered;
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+#| label: fig-flowchart
+#| fig-cap: A flow chart showing data handling, process and analysis
+
+
+knitr::include_graphics("Flow_chart.png")
+
+```
+
+
+
+
+##	Introduce similarities and differences of data structure in Excel and R language
+
+Data structure is a way of organizing data in a system to facilitate effective usage. It is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data. Excel has only one basic data structure; the Cell. A single cell is flexible as it can store numeric, character, logical, or formula information. Datasets in R are in tidy format in which every column represents a variable and every row is an observation and each cell is a single value [@wickham17]. R stores dataset of the same type within the same column. There is no mixing of different types of data on the same column. A single column in R contains a single type of data. 
+
+
+##	Introduce similarities and differences of data types in Excel and R language
+
+There are four types of data in Microsoft Excel. These are text, number, logical and error data. R language is a flexible language that allows working with different types of data format. This include integer, numeric, character, factor, complex, date and logical data. 
+
+##	Data loading and cleaning 
+
+Data can be opened in excel by opening the Microsoft excel and clicking on the Open button on the toolbar then you select File and open. Browse to the Excel file of interest and click Open and select the Worksheet to import. Data in R can be loaded using different packages such as `readxl` [@readxl22] and `readr` [@readr22] package. Data cleaning involve identifying and fixing any potential errors (missing data, typos, errors) before conducting any analyses in both R and excel. Data cleaning in R is done using `tidyverse` package [@tidyverse19].
+
+##	Data handling in Excel and R language
+
+Data Handling  involves all kinds of processes like import, validation and exploration of data. Data can be stored in different formats, like CSV (Comma Separated Variable), Excel and many other ways. Unlike Excel which handles excel files data, R is highly flexible software which is integrated with all formats of data storage and this makes data handling easy.  
+
+
+##	Data transformation and visualization in Excel and R language
+
+Before a dataset can be analysed in R, it is often manipulated or transformed in various ways. Manipulating data in R requires more programming than actually analyzing data. This is more simplified when using `dplyr` package. With dplyr's verbs (grammer of graphics), makes this process smoother, as it enables the use of vocabulary in both asking questions and writing codes [@dplyr22]. Data visualization is the technique used to deliver insights in data using visual such as graphs, charts, maps and many others. Data can be displayed in a number of ways in Excel such as charts and tables. Apart from graphs, charts, tables and  maps, data visualization can also be done using shiny apps in R. These are interactive web applications that allows creation of highly effective data visualizations where the user can explore a data set directly from his/her fingertip. 
+
+
+##	Basic fisheries statistics in Excel and R language
+
+This will provide an introduction on how to use Excel and R programming language in analysis commonly used in fisheries management.  This will help with some basic analyses, manipulations and visualizations of fisheries data in R programming.
+ 
+ 
+##	Develop Excel and R tools ready for use in training to support the lecture material and tutorials developed
+
+It will involve preparing R script and tutorials which will be used as a training material. This will contain all necessary steps involved in fisheries data analysis.
+
+##	Develop quarto book or manual 
+
+The book/manual will contain R-script with R codes for reproducibility of fisheries data management, analysis, visualization, and reporting to support the lecture material and tutorials developed. This will be used as a guideline in introduction to coding in R. The manuals will also contain step-by-step on how to use Excel and R language for data analysis and reporting.
+
+## Orientate the features and test the Excel-based tutorials
+
+In this, some major features will be oriented to perform guided manipulation of fisheries data, quality checks, validate and cross-reference data on landings, effort, and fish length distributions from priority countries, including simple diagnostic algorithms using real or simulated datasets.
+
+\newpage
+## Work plan
+
+Activities in this consultancy will be accomplished according to the workplan shown in @fig-workplan
+
+```{r echo=FALSE}
+#| label: fig-workplan
+#| fig-cap: The workplan
+#| 
+knitr::include_graphics("gantt-edited.pdf")
+```
+
+\newpage
+
+## Reference
+
+
+
+
+
+
+
+
+
+
+
